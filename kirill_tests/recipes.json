@@ -1,0 +1,27 @@
+{
+	"recipe1": {
+		"type": "...",
+		"ingridients": "",
+		"recipe_text": "How to cook recipe?"
+	},
+	"recipe2": {
+		"type": "...",
+		"ingridients": "",
+		"recipe_text": "How to cook recipe?"
+	},
+	"recipe3": {
+		"type": "...",
+		"ingridients": "",
+		"recipe_text": "How to cook recipe?"
+	},
+	"recipe4": {
+		"type": "...",
+		"ingridients": "",
+		"recipe_text": "How to cook recipe?"
+	},
+	"recipe5": {
+		"type": "...",
+		"ingridients": "",
+		"recipe_text": "How to cook recipe?"
+	}
+}
