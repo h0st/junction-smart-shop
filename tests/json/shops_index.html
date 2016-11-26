@@ -8,7 +8,7 @@
     <div id="placeholder"></div>
     <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script>
-  $.getJSON('shops.json', function(data) {
+	$.getJSON('shops.json', function(data) {
         <!-- var output="<ul>";-->
         <!-- for (var i in data.shops) {-->
 		<!-- 	output+="<li>"+data.shops[i].name+"</li>";-->
@@ -19,13 +19,19 @@
 		output += "<tr>"
 		output += "<th>Shop</th>"
 		output += "<th>Products</th>"
+		output += "</tr>"
 		for (var i in data.shops) {
-			output += "<tr>"+data.shop[i].name+"</tr>"
+			output += "<tr><td>"+data.shop[i].name+"</td></tr>"
+			output += "<tr>"
 			for (var j in data.shops[i].products) {
 				
-				output += "<tr>"+data.shop[i].products[j]+"</tr>"
+				output += "<td>"+data.shop[i].products[j].name+"</td>"
+				
 			}
+			output += "</tr>"
+			<!-- output += "<tr><td>"+data.shop[i].products+"</td></tr>" -->
 		}
+		output += "</table>"
   });
     </script>
 </body>

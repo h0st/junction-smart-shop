@@ -3,257 +3,264 @@
 	{
 		"name":"Prisma",
 		"products": [
-		{
-			"fish_fillets" : [
-				{
-					"name":"salmon fillets",
-					"category": "fish",
-					"description": "description",
-					"price": "5",
-					"measure": "weight"
-				}
-			],
-			"potatoes" : [
-				{
-					"name": "potatoes_rus",
-					"category": "vegetables",
-					"description": "russian",
-					"price": "3",
-					"measure": "weight"
-				},
-				{
-					"name": "potatoes_fin",
-					"category": "vegetables",
-					"description": "russian",
-					"price": "3",
-					"measure": "weight"
-				}
-			],
-			"seasonings": [
-				{
-					"name": "garlic",
-					"category": "seasoning",
-					"description": "description",
-					"price": "3",
-					"measure": "weight"
-				},
-				{
-					"name": "parsley",
-					"category": "seasoning",
-					"description": "description",
-					"price": "3",
-					"measure": "weight"
-				},
-				{	
-					"name": "honey",
-					"category": "seasoning",
-					"description": "description",
-					"price": "4",
-					"measure": "package"
-				},
-				{
-					"name": "basil",
-					"category": "seasoning",
-					"description": "description",
-					"price": "3",
-					"measure": "package"
-				},
-				{
-					"name": "tomato paste",
-					"category": "seasoning",
-					"description": "description",
-					"price": "5",
-					"measure": "package"
-				},
-				{
-					"name": "sea salt",
-					"category": "seasoning",
-					"description": "description",
-					"price": "4",
-					"measure": "package"
-				},
-				{
-					"name": "ground black pepper",
-					"category": "seasoning",
-					"description": "description",
-					"price": "2",
-					"measure": "package"
-				},
-				{
-					"name": "thyme",
-					"category": "seasoning",
-					"description": "description",
-					"price": "3",
-					"measure": "package"
-				},
-				{
-					"name": "bay leaf",
-					"category": "seasoning",
-					"description": "description",
-					"price": "2",
-					"measure": "package"
-				}
-			],
-			"oils" : [
-				{
-					"name": "olive oil",
-					"category": "oil",
-					"description": "description",
-					"price": "9",
-					"measure": "package"
-				},
-				{
-					"name": "sunseed oil",
-					"category": "oil",
-					"description": "description",
-					"price": "6",
-					"measure": "package"
-				},
-				{
-					"name": "vetable oil",
-					"category": "oil",
-					"description": "description",
-					"price": "4",
-					"measure": "package"
-				}
-			],
-			"onions" : [
-				{
-					"name": "onion",
-					"category": "vegetables",
-					"description": "....",
-					"price": "5",
-					"measure": "weight"
-				}
-			],
-			"preserves" : [
-				{
-					"name": "tomatoes in juice",
-					"category": "preserves",
-					"description": "....",
-					"price": "8",
-					"measure": "package"
-				}
-			],
-			"beans" : [
-				{
-					"name": "white beans",
-					"category": "vegetables",
-					"description": "....",
-					"price": "4",
-					"measure": "package"
-				},
-				{
-					"name": "black beans",
-					"category": "vegetables",
-					"description": "....",
-					"price": "3",
-					"measure": "package"
-				}
-			],
-			"cheese": [
-				{
-					"name": "parmesan",
-					"category": "dairy",
-					"description": "....",
-					"price": "3",
-					"measure": "weight"
-				}
-			],
-			"breads" : [
-				{
-					"name": "white bread",
-					"category": "bakery",
-					"description": "....",
-					"price": "1",
-					"measure": "package"
-				},
-				{
-					"name": "black bread",
-					"category": "bakery",
-					"description": "....",
-					"price": "1",
-					"measure": "package"
-				},
-				{
-					"name": "grey bread",
-					"category": "bakery",
-					"description": "....",
-					"price": "1",
-					"measure": "package"
-				}
-			],
-			"flour" : [
-				{
-					"name": "flour",
-					"category": "bakery",
-					"description": "....",
-					"price": "1",
-					"measure": "package"
-				}
-			],
-			"meat" : [
-				{
-					"name": "blade roast",
-					"category": "meat",
-					"description": "....",
-					"price": "1",
-					"measure": "package"
-				}
-			],
-			"butter" : [
-				{
-					"name": "butter",
-					"category": "dairy",
-					"description": "....",
-					"price": "2",
-					"measure": "package"
-				}
-			],
-			"celery" : [
-				{
-					"name": "celery",
-					"category": "vegetables",
-					"description": "....",
-					"price": "2",
-					"measure": "weight"
-				}
-			],
-			"carrots": [
-				{
-					"name": "large carrot",
-					"category": "vegetables",
-					"description": "....",
-					"price": "3",
-					"measure": "weight"
-				}
-			]
-		}]
+			{
+				"category": "fish",
+				"product" : [
+					{
+						"pname":"salmon fillets",
+						"description": "description",
+						"price": "5",
+						"measure": "weight"
+					}
+				]
+			},
+			{
+				"category":"vegetables",
+				"product" : [
+					{
+						"pname": "potatoes_rus",
+						"description": "russian",
+						"price": "3",
+						"measure": "weight"
+					},
+					{
+						"pname": "potatoes_fin",
+						"category": "vegetables",
+						"description": "russian",
+						"price": "3",
+						"measure": "weight"
+					}
+				]
+			},
+			{
+				"category": "seasoning",
+				"product" : [
+					{
+						"pname": "garlic",
+						"description": "description",
+						"price": "3",
+						"measure": "weight"
+					},
+					{
+						"pname": "parsley",
+						"description": "description",
+						"price": "3",
+						"measure": "weight"
+					},
+					{	
+						"pname": "honey",
+						"description": "description",
+						"price": "4",
+						"measure": "package"
+					},
+					{
+						"name": "basil",
+						"description": "description",
+						"price": "3",
+						"measure": "package"
+					},
+					{
+						"pname": "tomato paste",
+						"category": "seasoning",
+						"description": "description",
+						"price": "5",
+						"measure": "package"
+					},
+					{
+						"pname": "sea salt",
+						"description": "description",
+						"price": "4",
+						"measure": "package"
+					},
+					{
+						"pname": "ground black pepper",
+						"description": "description",
+						"price": "2",
+						"measure": "package"
+					},
+					{
+						"pname": "thyme",
+						"description": "description",
+						"price": "3",
+						"measure": "package"
+					},
+					{
+						"pname": "bay leaf",
+						"description": "description",
+						"price": "2",
+						"measure": "package"
+					},
+					{
+						"pname": "onion",
+						"description": "very hard",
+						"price": "3",
+						"measure": "weight"
+					},
+					{
+						"pname": "white beans",
+						"description": "....",
+						"price": "4",
+						"measure": "package"
+					},
+					{
+						"pname": "black beans",
+						"description": "....",
+						"price": "3",
+						"measure": "package"
+					},
+					{
+						"pname": "celery",
+						"description": "....",
+						"price": "2",
+						"measure": "weight"
+					},
+					{
+						"pname": "celery",
+						"description": "....",
+						"price": "2",
+						"measure": "weight"
+					},
+					{
+						"pname": "large carrot",
+						"description": "....",
+						"price": "3",
+						"measure": "weight"
+					}
+				]
+			},
+			{
+				"category": "oil",
+				"product" : [
+					{
+						"pname": "olive oil",
+						"category": "oil",
+						"description": "description",
+						"price": "9",
+						"measure": "package"
+					},
+					{
+						"pname": "sunseed oil",
+						"category": "oil",
+						"description": "description",
+						"price": "6",
+						"measure": "package"
+					},
+					{
+						"pname": "vetable oil",
+						"category": "oil",
+						"description": "description",
+						"price": "4",
+						"measure": "package"
+					}
+				]
+			},
+			{
+				"category": "preserves",
+				"product" : [
+					{
+						"pname": "tomatoes in juice",
+						"description": "....",
+						"price": "8",
+						"measure": "package"
+					}
+				]
+			},
+			{
+				"category": "cheese",
+				"product": [
+					{
+						"pname": "parmesan",
+						"description": "....",
+						"price": "3",
+						"measure": "weight"
+					},
+					{
+						"pname": "valio",
+						"description": "real true cheese",
+						"price": "3",
+						"measure": "weight"
+					}
+				]
+			},
+			{
+				"category": "bakery",
+				"product" : [
+					{
+						"pname": "white bread",
+						"description": "....",
+						"price": "1",
+						"measure": "package"
+					},
+					{
+						"pname": "black bread",
+						"description": "....",
+						"price": "1",
+						"measure": "package"
+					},
+					{
+						"pname": "grey bread",
+						"description": "....",
+						"price": "1",
+						"measure": "package"
+					},
+					{
+						"pname": "flour",
+						"description": "....",
+						"price": "1",
+						"measure": "package"
+					}
+				]
+			},
+			{
+				"category": "meat",
+				"product": [
+					{
+						"pname": "blade roast",
+						"description": "beaf meat, sweety cool",
+						"price": "1",
+						"measure": "package"
+					},
+					{
+						"pname": "rear roast",
+						"description": "beaf meat, sweety cool",
+						"price": "1",
+						"measure": "package"
+					}
+				]
+			},
+			{
+				"category": "dairy",
+				"product" : [
+					{
+						"pname": "butter",
+						"description": "....",
+						"price": "2",
+						"measure": "package"
+					}
+				]
+			}
+		]
 	},
 	{
 		"name":"K-Ruoka",
 		"products": [
 		{
-			"potatoes": [
+			"category": "vegetables",
+			"product" : [
 				{
-					"name": "finland potatoes",
-					"category": "vegetables",
+					"pname": "finland potatoes",
 					"description": "....",
 					"price": "5",
 					"measure": "weight"
 				},
 				{
-					"name": "russian potatoes",
-					"category": "vegetables",
+					"pname": "russian potatoes",
 					"description": "russian",
 					"price": "3",
 					"measure": "weight"
-				}
-			],
-			"tomatoes": [
+				},
 				{
-					"name": "tomatoes",
-					"category": "vegetables",
+					"pname": "tomatoes",
 					"description": "russian",
 					"price": "3",
 					"measure": "weight"
