@@ -1,0 +1,42 @@
+{
+	"shop1": {
+		"potatoes_fin": {
+			"category": "vegetables",
+			"description": "....",
+			"price": "5",
+			"measure": "weight"
+		},
+		"potatoes_rus": {
+			"category": "vegetables",
+			"description": "russian",
+			"price": "3",
+			"measure": "weight"
+		},
+		"tomatoes": {
+			"category": "vegetables",
+			"description": "russian",
+			"price": "3",
+			"measure": "weight"
+		}
+	},
+	"shop2": {
+		"potatoes_fin": {
+			"category": "vegetables",
+			"description": "....",
+			"price": "5",
+			"measure": "weight"
+		},
+		"potatoes_rus": {
+			"category": "vegetables",
+			"description": "russian",
+			"price": "3",
+			"measure": "weight"
+		},
+		"tomatoes": {
+			"category": "vegetables",
+			"description": "russian",
+			"price": "3",
+			"measure": "weight"
+		}
+	}
+}
