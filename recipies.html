@@ -17,13 +17,6 @@
     <!-- Custom CSS -->
     <link href="bootstrap-3.3.7-dist/css/thumbnail-gallery.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
   <style>
    .sign {
     border: 1px solid #333; /* Параметры рамки */
@@ -53,67 +46,53 @@
                 </button>
                 <a onclick="window.location.href='index.html'" class="navbar-brand" href="#">Home</a>
             </div>
-			
-            <!-- <!-- Collect the nav links, forms, and other content for toggling --> -->
-            <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
-                <!-- <ul class="nav navbar-nav"> -->
-                    <!-- <li> -->
-                        <!-- <a href="#">About</a> -->
-                    <!-- </li> -->
-                    <!-- <li> -->
-                        <!-- <a href="#">Services</a> -->
-                    <!-- </li> -->
-                    <!-- <li> -->
-                        <!-- <a href="#">Contact</a> -->
-                    <!-- </li> -->
-                <!-- </ul> -->
-            <!-- </div> -->
-			
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
     </nav>
 
+	<div>
+		<h1 class="page-header">Choose a recipe</h1>
+	</div>
+	
     <!-- Page Content -->
     <div class="container" id="placeholder">
 
         <div class="row">
-
-            <div class="col-lg-12">
-                <h1 class="page-header">Choose a recipe</h1>
-            </div>
-
+			<script language="javascript" type="text/javascript">
+				function goToCurrentRecipe(name1) {
+						document.location = "currentReciep.html?recipeName=" + name1;
+				}
+			</script>			
 			
-			<script>
-  $.getJSON('recipes.json', function(data) {
-        var output="";
-        for (var i in data.recipes) {
-			output+="<div class=\"col-lg-3 col-md-4 col-xs-6 thumb sign\" style=\"width:30%\">";
-            output+="<a class=\"thumbnail\" href=\"#\">";
-            output+="<img class=\"img-responsive\" src=\"http://placehold.it/400x300\" alt=\"\">";
-            output+="</a>";
-			output+="<figcaption>"+data.recipes[i].name+"</figcaption>";
-            output+="</div>";
-		}
-        document.getElementById("placeholder").innerHTML=output;
-  });
+		<script>
+			  $.getJSON('recipes.json', function(data) {
+					var output="";
+					for (var i in data.recipes) {
+						output+="<div class=\"col-lg-3 col-md-4 col-xs-6 thumb sign\" style=\"width:30%\">";
+						output+="<a name=\"" +data.recipes[i].name+ "\" class=\"thumbnail\" href=\"#\" onclick=\"goToCurrentRecipe(this.name)\" >";
+						output+="<img class=\"img-responsive\" src=\"http://placehold.it/400x300\" alt=\"\">";
+						output+="</a>";
+						output+="<figcaption>"+data.recipes[i].name+"</figcaption>";
+						output+="</div>";
+					}
+					document.getElementById("placeholder").innerHTML=output;
+			  });
 		</script>
 	
         </div>
 
         <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </footer>
-
     </div>
     <!-- /.container -->
+	
+	<!-- Footer -->
+	<footer>
+		<div class="row">
+			<div class="col-lg-12">
+				<p></p>
+			</div>
+		</div>
+	</footer>
+	
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
