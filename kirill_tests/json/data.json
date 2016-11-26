@@ -2,13 +2,13 @@
 	"users":[
     {
 		"firstName":"Ray",
-            "lastName":"Villalobos",
-            "joined": {
-                "month":"January",
-                "day":12,
-                "year":2012
-            }
-        },
+        "lastName":"Villalobos",
+        "joined": {
+            "month":"January",
+            "day":12,
+            "year":2012
+        }
+    },
         {
             "firstName":"John",
             "lastName":"Jones",
