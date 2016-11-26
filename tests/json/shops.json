@@ -25,7 +25,6 @@
 					},
 					{
 						"pname": "potatoes_fin",
-						"category": "vegetables",
 						"description": "russian",
 						"price": "3",
 						"measure": "weight"
@@ -133,21 +132,18 @@
 				"product" : [
 					{
 						"pname": "olive oil",
-						"category": "oil",
 						"description": "description",
 						"price": "9",
 						"measure": "package"
 					},
 					{
 						"pname": "sunseed oil",
-						"category": "oil",
 						"description": "description",
 						"price": "6",
 						"measure": "package"
 					},
 					{
 						"pname": "vetable oil",
-						"category": "oil",
 						"description": "description",
 						"price": "4",
 						"measure": "package"
@@ -210,7 +206,7 @@
 						"measure": "package"
 					}
 				]
-			}, 
+			},
 			{
 				"category": "meat",
 				"product": [
@@ -244,28 +240,46 @@
 	{
 		"name":"K-Ruoka",
 		"products": [
-		{
-			"category": "vegetables",
-			"product" : [
-				{
-					"pname": "finland potatoes",
-					"description": "....",
-					"price": "5",
-					"measure": "weight"
-				},
-				{
-					"pname": "russian potatoes",
-					"description": "russian",
-					"price": "3",
-					"measure": "weight"
-				},
-				{
-					"pname": "tomatoes",
-					"description": "russian",
-					"price": "3",
-					"measure": "weight"
-				}
-			]
-		}]
+			{
+				"category": "vegetables",
+				"product" : [
+					{
+						"pname": "potatoes",
+						"description": "from Finland",
+						"price": "5",
+						"measure": "weight"
+					},
+					{
+						"pname": "potatoes",
+						"description": "from Russia",
+						"price": "3",
+						"measure": "weight"
+					},
+					{
+						"pname": "tomatoes",
+						"description": "russian",
+						"price": "3",
+						"measure": "weight"
+					}
+				]
+			},
+			{
+				"category": "snacks",
+				"product" : [
+					{
+						"pname": "sandwitch",
+						"description": "original",
+						"price": "0.5",
+						"measure": "number"
+					},
+					{
+						"pname": "chocolate",
+						"description": "milka",
+						"price": "2",
+						"measure": "weight"
+					}
+				]
+			}
+		]
 	}
 ]}
