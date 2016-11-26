@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>JSON shops</title>
+</head>
+<body>
+    <div id="placeholder"></div>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+  $.getJSON('shops.json', function(data) {
+        <!-- var output="<ul>";-->
+        <!-- for (var i in data.shops) {-->
+		<!-- 	output+="<li>"+data.shops[i].name+"</li>";-->
+        <!-- }-->
+        <!-- output+="</ul><br>";-->
+        <!-- document.getElementById("placeholder").innerHTML=output; -->
+		var output = "<table style=\"width:100%\">"
+		output += "<tr>"
+		output += "<th>Shop</th>"
+		output += "<th>Products</th>"
+		for (var i in data.shops) {
+			output += "<tr>"+data.shop[i].name+"</tr>"
+			for (var j in data.shops[i].products) {
+				
+				output += "<tr>"+data.shop[i].products[j]+"</tr>"
+			}
+		}
+  });
+    </script>
+</body>
+</html>
