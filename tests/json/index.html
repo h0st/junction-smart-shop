@@ -6,15 +6,19 @@
 </head>
 <body>
     <div id="placeholder"></div>
-    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script>
   $.getJSON('data.json', function(data) {
         var output="<ul>";
         for (var i in data.users) {
-            output+="<li>" + data.users[i].firstName + " " + data.users[i].lastName + "--" + data.users[i].joined.month+"</li>";
+			var surname = data.users[i].lastName;
+			var splited_surnames = surname.split(";");
+				for (var i in splited_surnames) {
+					output+="<li>"+splited_surnames[i]+"</li>";
+				}
         }
 
-        output+="</ul>";
+        output+="</ul><br>";
         document.getElementById("placeholder").innerHTML=output;
   });
     </script>
