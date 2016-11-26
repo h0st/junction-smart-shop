@@ -39,7 +39,7 @@
 </head>
 
 <body>
-
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -75,7 +75,7 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container" id="placeholder">
 
         <div class="row">
 
@@ -83,99 +83,22 @@
                 <h1 class="page-header">Choose a recipe</h1>
             </div>
 
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb sign" style="width:30%">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-				<figcaption>Борщ</figcaption>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb sign" style="width:30%">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-				<figcaption>Борщ</figcaption>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb sign" style="width:30%">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-				<figcaption>Борщ</figcaption>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb sign" style="width:30%">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-				<figcaption>Борщ</figcaption>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb sign" style="width:30%">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-				<figcaption>Борщ</figcaption>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb sign" style="width:30%">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                </a>
-				<figcaption>Борщ</figcaption>
-            </div>			
 			
-            <!-- <div class="col-lg-3 col-md-4 col-xs-6 thumb"> -->
-                <!-- <a class="thumbnail" href="#"> -->
-                    <!-- <img class="img-responsive" src="http://placehold.it/400x300" alt=""> -->
-                <!-- </a> -->
-            <!-- </div> -->
-            <!-- <div class="col-lg-3 col-md-4 col-xs-6 thumb"> -->
-                <!-- <a class="thumbnail" href="#"> -->
-                    <!-- <img class="img-responsive" src="http://placehold.it/400x300" alt=""> -->
-                <!-- </a> -->
-            <!-- </div> -->
-            <!-- <div class="col-lg-3 col-md-4 col-xs-6 thumb"> -->
-                <!-- <a class="thumbnail" href="#"> -->
-                    <!-- <img class="img-responsive" src="http://placehold.it/400x300" alt=""> -->
-                <!-- </a> -->
-            <!-- </div> -->
-            <!-- <div class="col-lg-3 col-md-4 col-xs-6 thumb"> -->
-                <!-- <a class="thumbnail" href="#"> -->
-                    <!-- <img class="img-responsive" src="http://placehold.it/400x300" alt=""> -->
-                <!-- </a> -->
-            <!-- </div> -->
-            <!-- <div class="col-lg-3 col-md-4 col-xs-6 thumb"> -->
-                <!-- <a class="thumbnail" href="#"> -->
-                    <!-- <img class="img-responsive" src="http://placehold.it/400x300" alt=""> -->
-                <!-- </a> -->
-            <!-- </div> -->
-            <!-- <div class="col-lg-3 col-md-4 col-xs-6 thumb"> -->
-                <!-- <a class="thumbnail" href="#"> -->
-                    <!-- <img class="img-responsive" src="http://placehold.it/400x300" alt=""> -->
-                <!-- </a> -->
-            <!-- </div> -->
-            <!-- <div class="col-lg-3 col-md-4 col-xs-6 thumb"> -->
-                <!-- <a class="thumbnail" href="#"> -->
-                    <!-- <img class="img-responsive" src="http://placehold.it/400x300" alt=""> -->
-                <!-- </a> -->
-            <!-- </div> -->
-            <!-- <div class="col-lg-3 col-md-4 col-xs-6 thumb"> -->
-                <!-- <a class="thumbnail" href="#"> -->
-                    <!-- <img class="img-responsive" src="http://placehold.it/400x300" alt=""> -->
-                <!-- </a> -->
-            <!-- </div> -->
-            <!-- <div class="col-lg-3 col-md-4 col-xs-6 thumb"> -->
-                <!-- <a class="thumbnail" href="#"> -->
-                    <!-- <img class="img-responsive" src="http://placehold.it/400x300" alt=""> -->
-                <!-- </a> -->
-            <!-- </div> -->
-            <!-- <div class="col-lg-3 col-md-4 col-xs-6 thumb"> -->
-                <!-- <a class="thumbnail" href="#"> -->
-                    <!-- <img class="img-responsive" src="http://placehold.it/400x300" alt=""> -->
-                <!-- </a> -->
-            <!-- </div> -->
-            <!-- <div class="col-lg-3 col-md-4 col-xs-6 thumb"> -->
-                <!-- <a class="thumbnail" href="#"> -->
-                    <!-- <img class="img-responsive" src="http://placehold.it/400x300" alt=""> -->
-                <!-- </a> -->
-            <!-- </div> -->
-			
+			<script>
+  $.getJSON('recipes.json', function(data) {
+        var output="";
+        for (var i in data.recipes) {
+			output+="<div class=\"col-lg-3 col-md-4 col-xs-6 thumb sign\" style=\"width:30%\">";
+            output+="<a class=\"thumbnail\" href=\"#\">";
+            output+="<img class=\"img-responsive\" src=\"http://placehold.it/400x300\" alt=\"\">";
+            output+="</a>";
+			output+="<figcaption>"+data.recipes[i].name+"</figcaption>";
+            output+="</div>";
+		}
+        document.getElementById("placeholder").innerHTML=output;
+  });
+		</script>
+	
         </div>
 
         <hr>
