@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Shop catalog</h2>
+
+<p id="demo"></p>
+
+<!--<script>
+ 
+var text = '{"name":"John Johnson","street":"Oslo West 16","phone":"555 1234567"}';
+
+var obj = JSON.parse(text);
+
+document.getElementById("demo").innerHTML =
+obj.name + "<br>" +
+obj.street + "<br>" +
+obj.phone;
+</script>-->
+
+<!--<script>
+
+JsonObj = null 
+
+function handleFileSelect(evt) {
+    var files = evt.target.files; // FileList object
+    f = files[0];
+    var reader = new FileReader();
+
+    // Closure to capture the file information.
+    reader.onload = (function(theFile) {
+      return function(e) {
+      // Render thumbnail.
+      JsonObj = JSON.parse(e.target.result);
+      console.log(JsonObj);
+      };
+    })(f);
+
+    // Read in the image file as a data URL.
+    reader.readAsText(f);
+}
+
+document.getElementById('files').addEventListener('change', handleFileSelect, false);
+
+</script>-->
+
+<script>
+
+$.getJSON('shops.json', function(data) {
+  console.log(data);
+});
+
+</script>
+
+</body>
+</html>
